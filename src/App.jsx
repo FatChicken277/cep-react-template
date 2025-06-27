@@ -8,9 +8,9 @@ function loadJSX(filename) {
 
 export default function App() {
   // Cargar el archivo ExtendScript al iniciar
-  useEffect(() => {
+  window.addEventListener("load", () => {
     loadJSX("main.jsx");
-  }, []);
+  });
 
   // Ejecutar una función definida en main.jsx
   const runScript = () => {
