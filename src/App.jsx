@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-
 function loadJSX(filename) {
   const cs = new CSInterface();
   const extensionRoot = cs.getSystemPath(SystemPath.EXTENSION) + "/jsx/";
